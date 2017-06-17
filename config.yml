@@ -1,0 +1,55 @@
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    - "src/**/*.html"
+  ignore:
+    - !!js/regexp .bootstrap-mq
+    - !!js/regexp ^\.is-.*
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "!src/assets/{img,js,scss}/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "bower_components/bootstrap-sass/assets/stylesheets/bootstrap"
+    - "bower_components/slick-carousel/slick"
+  # Paths to JavaScript libraries, which are combined into one file
+  javascript:
+    # Libraries required by Bootstrap
+    - "bower_components/jquery/dist/jquery.js"
+    # Additional libraries
+    - "bower_components/what-input/dist/what-input.js"
+    - "bower_components/slick-carousel/slick/slick.min.js"
+    # Core Bootstrap files
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"
+    # Individual Bootstrap components
+    # If you aren't using a component, just remove it from the list
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"
+    - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"
+    - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"
+    - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"
+    # - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"
+    - "bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"
+    # Paths to your own project code are here
+    - "src/assets/js/!(app).js"
+    - "src/assets/js/app.js"

@@ -1,0 +1,17 @@
+body {
+	font-family: ProximaNova;
+	font-size: 20px;
+	color: #665f60;
+}
+
+.cd-section {
+	&__header {
+		margin-bottom: 95px;
+	}
+}
+
+.cd-ttile {
+	font-size: 36px;
+	font-weight: 600;
+	color: $primary-color;
+}

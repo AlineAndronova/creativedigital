@@ -1,0 +1,23 @@
+{
+  "name": "bootstrap-starter",
+  "version": "1.0.0",
+  "authors": [
+    "BA <academy@beetroot.se>"
+  ],
+  "description": "Starter for Bootstrap based websites.",
+  "main": "gulpfile.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "what-input": "^4.0.6",
+    "slick-carousel": "^1.6.0"
+  },
+  "private": true
+}
